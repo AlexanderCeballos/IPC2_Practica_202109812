@@ -17,13 +17,14 @@ class Pila:
 
     def printPila(self):
         nodoTemp = self.tope
-        listaDatos = ""
+        cadenaTemporal = ""
 
         while nodoTemp != None:
-            listaDatos += nodoTemp.getValor()
+            cadenaTemporal += nodoTemp.getValor()
+            cadenaTemporal += " | "
             nodoTemp = nodoTemp.getSiguiente()
 
-        return listaDatos
+        return cadenaTemporal
     
     def generarDot(self):
         nodoTemp = self.tope
